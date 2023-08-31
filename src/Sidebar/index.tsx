@@ -1,3 +1,4 @@
+import { SelectedStepsProps } from "../useSelectedStep";
 import { stepsData } from "./stepsData";
 import {
   Step,
@@ -9,13 +10,22 @@ import {
   StyledSidebar,
 } from "./styled";
 
-const Sidebar = () => {
+const Sidebar = ({ selectedStep }: SelectedStepsProps) => {
   return (
     <StyledSidebar>
       <StepsBox>
         {stepsData.map(({ number, content, name }) => (
           <Step key={number}>
-            <StepNumber>{number}</StepNumber>
+            <StepNumber
+              activestep={
+                selectedStep === +number ||
+                (selectedStep === 5 && +number === 4)
+                  ? "true"
+                  : "false"
+              }
+            >
+              {number}
+            </StepNumber>
             <StepContent>
               <StepNumberName>{content}</StepNumberName>
               <StepName>{name}</StepName>
