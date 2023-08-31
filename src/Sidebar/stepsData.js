@@ -18,5 +18,5 @@ export const stepsData = [
         number: "4",
         content: "Step 4",
         name: "Summary"
-    },
+    }
 ]
