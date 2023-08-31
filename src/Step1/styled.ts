@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 interface InputProps {
-  error?: boolean;
+  error?: "true" | "false";
 }
 
 export const Input = styled.input<InputProps>`
@@ -23,7 +23,7 @@ export const Input = styled.input<InputProps>`
   }
 
   ${({ error }) =>
-    error &&
+    error === "true" &&
     css`
       outline: 1px solid ${({ theme }) => theme.colors.strawberry};
     `}
