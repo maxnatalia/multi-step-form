@@ -1,5 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import bgdesktop from "./bg-sidebar-desktop.svg";
+interface ActiveStepProps {
+  activestep: "true" | "false";
+}
 
 export const StyledSidebar = styled.aside`
   min-width: 270px;
@@ -23,7 +26,7 @@ export const Step = styled.div`
   line-height: 1.4;
 `;
 
-export const StepNumber = styled.span`
+export const StepNumber = styled.span<ActiveStepProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +34,15 @@ export const StepNumber = styled.span`
   height: 40px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.colors.white};
+  font-weight: 700;
+
+  ${({ activestep }) =>
+    activestep === "true" &&
+    css`
+      background-color: ${({ theme }) => theme.colors.lightBlue};
+      color: ${({ theme }) => theme.colors.marineBlue};
+      border: none;
+    `}
 `;
 
 export const StepContent = styled.div`
