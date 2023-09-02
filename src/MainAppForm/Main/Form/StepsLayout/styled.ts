@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 90%;
-  min-width: 600px;
+  min-width: 610px;
 `;
 
 export const Title = styled.h2`

@@ -1,10 +1,5 @@
-import { ReactNode } from "react";
+import { StepsLayoutProps } from "./interfaces";
 import { Container, Description, Title } from "./styled";
-interface StepsLayoutProps {
-  title: string;
-  description: string;
-  children: ReactNode;
-}
 
 const StepsLayout = ({ title, description, children }: StepsLayoutProps) => {
   return (
