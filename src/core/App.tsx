@@ -1,4 +1,4 @@
-import MainAppForm from "./MainAppForm";
+import MainAppForm from "../MainAppForm";
 
 const App = () => {
   return <MainAppForm />;
