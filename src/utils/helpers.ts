@@ -4,3 +4,6 @@ export const convertToNumber = (text: string, charactersToCut: number) => {
 
   return numericValue;
 };
+
+export const isNotEmpty = (value: string) => value.trim() !== "";
+export const isEmail = (value: string) => value.includes("@");
