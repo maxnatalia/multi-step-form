@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
-import { GlobalStyle } from "./GlobalStyles";
-import App from "./App";
+import { theme } from "./core/theme";
+import { GlobalStyle } from "./core/GlobalStyles";
+import App from "./core/App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
