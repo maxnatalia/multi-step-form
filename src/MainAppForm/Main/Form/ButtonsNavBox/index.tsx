@@ -4,9 +4,9 @@ import { BackButton, ButtonsBox, NextButton } from "./styled";
 const ButtonsNavBox = ({
   selectedStep,
   handlePrevStep,
-  formIsValid,
   handleFormSubmitAndGoToStep5,
   handleNextStep,
+  handleFirstStep,
 }: ButtonsNavBoxProps) => {
   return (
     <ButtonsBox>
@@ -16,11 +16,14 @@ const ButtonsNavBox = ({
         </BackButton>
       )}
       <NextButton
-        disabled={!formIsValid}
         type="button"
-        isStep4={selectedStep === 4}
+        step4={selectedStep === 4 ? "true" : "false"}
         onClick={
-          selectedStep === 4 ? handleFormSubmitAndGoToStep5 : handleNextStep
+          selectedStep === 4
+            ? handleFormSubmitAndGoToStep5
+            : selectedStep === 1
+            ? handleFirstStep
+            : handleNextStep
         }
       >
         {selectedStep === 4 ? "Confirm" : "Next Step"}
