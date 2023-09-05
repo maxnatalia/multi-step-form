@@ -19,6 +19,7 @@ const FieldInput = ({
         {error && <ErrorMessage>This field is requiered</ErrorMessage>}
       </LabelBox>
       <Input
+        error={error ? "true" : "false"}
         type={type}
         placeholder={placeholder}
         value={value}
