@@ -8,4 +8,11 @@ export const StyledMain = styled.main`
   height: 600px;
   max-width: 1200px;
   display: flex;
+
+  @media (max-width: 991px) {
+    padding: 0;
+    flex-direction: column;
+    height: 100%;
+    background-color: ${({ theme }) => theme.colors.magnolia};
+  }
 `;
