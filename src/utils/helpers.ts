@@ -7,3 +7,4 @@ export const convertToNumber = (text: string, charactersToCut: number) => {
 
 export const isNotEmpty = (value: string) => value.trim() !== "";
 export const isEmail = (value: string) => value.includes("@");
+export const isPhone = (value: string) => /^\d{9,}$/.test(value);
