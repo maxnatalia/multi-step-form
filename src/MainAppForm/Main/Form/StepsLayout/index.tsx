@@ -1,9 +1,16 @@
 import { StepsLayoutProps } from "./interfaces";
-import { Container, Description, Title } from "./styled";
+import { Container, Description, IconWrapper, Title } from "./styled";
 
-const StepsLayout = ({ title, description, children }: StepsLayoutProps) => {
+const StepsLayout = ({
+  icon,
+  title,
+  description,
+  children,
+  aligncenter,
+}: StepsLayoutProps) => {
   return (
-    <Container>
+    <Container aligncenter={aligncenter ? "true" : "false"}>
+      {icon && <IconWrapper>{icon}</IconWrapper>}
       <Title>{title}</Title>
       <Description>{description}</Description>
       <div>{children}</div>
