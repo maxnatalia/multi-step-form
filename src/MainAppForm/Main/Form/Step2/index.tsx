@@ -23,6 +23,7 @@ const Step2 = ({
             plan={plan}
             selectedPlan={selectedPlan}
             handleChooseOffer={handleChooseOffer}
+            role="radio"
             isMonthly={isMonthly}
           />
         ))}
