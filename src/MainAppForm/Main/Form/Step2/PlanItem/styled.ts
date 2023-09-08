@@ -25,6 +25,12 @@ export const Plan = styled.div<PlanProps>`
       background-color: ${({ theme }) => theme.colors.magnolia};
       border: 1px solid ${({ theme }) => theme.colors.purplishBlue};
     `}
+
+  @media (max-width: 991px) {
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+  }
 `;
 
 export const Name = styled.h4`
