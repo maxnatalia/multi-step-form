@@ -5,7 +5,7 @@ const Period = ({ isMonthly, handleChangePeriod }: StepsProps) => {
   return (
     <PeriodContainer>
       <StyledPeriod period={isMonthly ? "true" : "false"}>Monthly</StyledPeriod>
-      <BoxIcon onClick={handleChangePeriod}>
+      <BoxIcon onClick={handleChangePeriod} role="checkbox">
         <Icon move={!isMonthly ? "false" : "true"} />
       </BoxIcon>
       <StyledPeriod period={!isMonthly ? "true" : "false"}>Yearly</StyledPeriod>
