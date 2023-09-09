@@ -1,13 +1,12 @@
+import { useStepsContext } from "../../../stepsContext";
 import { ButtonsNavBoxProps } from "./interfaces";
 import { BackButton, ButtonsBox, NextButton } from "./styled";
 
 const ButtonsNavBox = ({
-  selectedStep,
-  handlePrevStep,
   handleFormSubmitAndGoToStep5,
-  handleNextStep,
   handleFirstStep,
 }: ButtonsNavBoxProps) => {
+  const { selectedStep, handleNextStep, handlePrevStep } = useStepsContext();
   return (
     <ButtonsBox>
       {selectedStep !== 1 && (

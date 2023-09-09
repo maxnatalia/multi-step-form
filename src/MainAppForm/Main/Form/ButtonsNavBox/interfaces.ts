@@ -1,6 +1,4 @@
-import { FormEvent } from "react";
-import { SelectedStepsProps } from "../../../interfaces";
-export interface ButtonsNavBoxProps extends SelectedStepsProps {
+export interface ButtonsNavBoxProps {
   handleFormSubmitAndGoToStep5: (e: React.FormEvent) => void;
   handleFirstStep?: () => void;
 }
