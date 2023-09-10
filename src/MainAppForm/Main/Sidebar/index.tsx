@@ -1,4 +1,4 @@
-import { SelectedStepsProps } from "../../interfaces";
+import { useStepsContext } from "../../stepsContext";
 import { stepsData } from "./stepsData";
 import {
   Step,
@@ -10,7 +10,9 @@ import {
   StyledSidebar,
 } from "./styled";
 
-const Sidebar = ({ selectedStep }: SelectedStepsProps) => {
+const Sidebar = () => {
+  const { selectedStep } = useStepsContext();
+
   return (
     <StyledSidebar>
       <StepsBox>
