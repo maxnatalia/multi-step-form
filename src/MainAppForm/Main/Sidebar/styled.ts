@@ -59,7 +59,7 @@ export const StepNumber = styled.span<ActiveStepProps>`
     css`
       background-color: ${({ theme }) => theme.colors.lightBlue};
       color: ${({ theme }) => theme.colors.marineBlue};
-      border: none;
+      border: 2px solid ${({ theme }) => theme.colors.lightBlue};
     `}
 `;
 
