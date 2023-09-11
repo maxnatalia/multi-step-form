@@ -1,31 +1,18 @@
-import Footer from "./Footer";
-import Form from "./Main/Form";
+import { StepsProvider } from "./stepsContext";
 import Main from "./Main";
 import Sidebar from "./Main/Sidebar";
-import { SelectedStepsProps } from "./interfaces";
-import { useSelectedStep } from "./useSelectedStep";
+import Form from "./Main/Form";
+import Footer from "./Footer";
 
 const MainAppForm = () => {
-  const {
-    selectedStep,
-    handleNextStep,
-    handlePrevStep,
-    handleGoToStep,
-  }: SelectedStepsProps = useSelectedStep();
-
   return (
-    <>
+    <StepsProvider>
       <Main>
-        <Sidebar selectedStep={selectedStep} />
-        <Form
-          selectedStep={selectedStep}
-          handleNextStep={handleNextStep}
-          handlePrevStep={handlePrevStep}
-          handleGoToStep={handleGoToStep}
-        />
+        <Sidebar />
+        <Form />
       </Main>
       <Footer />
-    </>
+    </StepsProvider>
   );
 };
 
