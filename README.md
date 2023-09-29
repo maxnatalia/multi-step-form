@@ -22,7 +22,7 @@ Users are able to:
 
 [Here you can see DEMO page - Multi-Step-Form](https://maxnatalia.github.io/multi-step-form).
 
-<!-- [Solution in Frontend Mentor Page](https://www.frontendmentor.io/solutions/responsive-easybank-landing-page-2qAe5Vvg4t). -->
+[Solution in Frontend Mentor Page](https://www.frontendmentor.io/solutions/multistepform-in-react-with-typescript-oSNQpsah67).
 
 ## Preview
 
@@ -40,6 +40,16 @@ I used the following technologies during the project:
 - React
 - Custom Hooks
 - useContext
+
+## Summary
+
+This project was an excellent opportunity to apply practical knowledge of creating responsive user interfaces and implementing a design and logic based on specifications. Through this task, I had the chance to enhance my skills.
+
+If you have any questions or feedback regarding this project, I would be glad to hear from you. You can contact me via nataliamazur1988@gmail.com or visit my social media profiles.
+
+Thank you for reviewing my project!
+
+_This project was completed as a part of the Frontend Mentor challenge. For more information about Frontend Mentor, you can visit [Frontend Mentor](https://frontendmentor.io)._
 
 ## Available Scripts
 
